@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PayrollReportController">
+   <children>
+      <TableView fx:id="payrollTable" layoutX="63.0" layoutY="74.0" prefHeight="340.0" prefWidth="774.0">
+        <columns>
+          <TableColumn fx:id="empIdCol" prefWidth="49.60003662109375" text="EmpID" />
+          <TableColumn fx:id="nameCol" prefWidth="224.79998016357422" text="Name" />
+            <TableColumn fx:id="wageCol" prefWidth="104.0" text="Wage" />
+            <TableColumn fx:id="hoursCol" prefWidth="128.00003051757812" text="Hours" />
+            <TableColumn fx:id="benefitsCol" prefWidth="111.20001220703125" text="Benefits" />
+            <TableColumn fx:id="totalCol" prefWidth="159.2000732421875" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="394.0" layoutY="40.0" text="Payroll for last 7 days" />
+      <Button fx:id="managerPanelBtn" layoutX="50.0" layoutY="612.0" mnemonicParsing="false" onAction="#managerPanel" text="Manager Panel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="controllers.UpdatePunchController">
+    <children>
+      <TextField fx:id="inTimeTxt" layoutX="222.0" layoutY="83.0" />
+      <TextField fx:id="inDateTxt" layoutX="499.0" layoutY="83.0" />
+      <Label layoutX="283.0" layoutY="50.0" text="TIME" />
+      <Label layoutX="264.0" layoutY="139.0" text="(HH:MM:SS)" />
+      <Label layoutX="559.0" layoutY="50.0" text="DATE" />
+      <Label layoutX="532.0" layoutY="139.0" text="(YYYY-MM-DD)" />
+      <Button fx:id="updatePunchBtn" layoutX="55.0" layoutY="624.0" mnemonicParsing="false" onAction="#updatePunch" text="Update Punch" />
+      <Button fx:id="cancelBtn" layoutX="794.0" layoutY="624.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Label fx:id="inTimeError" layoutX="227.0" layoutY="182.0" textFill="RED" />
+      <Label fx:id="inDateError" layoutX="222.0" layoutY="224.0" textFill="RED" />
+      <Label layoutX="55.0" layoutY="87.0" text="Punch In" />
+      <Label layoutX="55.0" layoutY="350.0" text="Punch Out" />
+      <TextField fx:id="outTimeTxt" layoutX="222.0" layoutY="346.0" />
+      <TextField fx:id="outDateTxt" layoutX="499.0" layoutY="346.0" />
+      <Label layoutX="283.0" layoutY="306.0" text="TIME" />
+      <Label layoutX="559.0" layoutY="306.0" text="DATE" />
+      <Label layoutX="264.0" layoutY="391.0" text="(HH:MM:SS)" />
+      <Label layoutX="532.0" layoutY="391.0" text="(YYYY-MM-DD)" />
+      <Label fx:id="outTimeError" layoutX="222.0" layoutY="436.0" textFill="RED" />
+      <Label fx:id="outDateError" layoutX="227.0" layoutY="477.0" textFill="RED" />
+   </children>
+</AnchorPane>
